@@ -1,0 +1,20 @@
+strategy:
+  type: copy
+  volume_ratio: 0.01
+  target:
+    decimalprice: 2
+    decimalamount: 4
+    spread: 0.05
+    driver: rubykube
+    market: 'ETHUSD'
+    host: "https://www.starthold.com"
+    key: "e347974cfeefbef0"
+    secret: "891e2e652ba5e211b6ef73cf63f10770"
+    rate_limit: 10
+  sources:
+    - driver: bitfinex
+      market: 'tETHUSD'
+      host: "api.bitfinex.com"
+      key: ""
+      secret: ""
+      rate_limit: 10
